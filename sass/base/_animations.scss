@@ -1,0 +1,60 @@
+
+@keyframes moveInRight {
+    0% {
+       opacity: 0;
+       margin-left: -200px;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+  
+    100% {
+       
+        margin-left: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scaleX(30);
+       
+      
+    }
+
+    25% {
+        opacity: 0.1;
+        transform: scaleX(25);
+       
+    }
+   
+    50%{
+        opacity: 0.2;
+        transform: scaleX(20);
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+       
+        transform: translate(-50%, 50%);
+      
+    }
+
+    50% {
+        transform: translate(-50%, -0%);
+       
+    }
+   
+    100% {
+        transform: translate(-50%, -50%);
+       
+    }
+}
+
