@@ -1,0 +1,45 @@
+.car-block {
+  background-color: rgba(255, 255, 255, 0.945);
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    width: 50%;
+  }
+
+  &__p {
+    width: 50%;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-primary-2);
+    line-height: 1.7;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+
+    flex: 0 0 40%;
+  }
+
+  &__four {
+    border: 1px solid #de6133;
+    border-radius: 50%;
+    background-color: #dd6233;
+    height: 3rem;
+    color: white;
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  &__car,
+  &__you {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+}
+
+

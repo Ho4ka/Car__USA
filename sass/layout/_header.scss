@@ -1,7 +1,7 @@
 
 
 .header{
-    background-image: url("/img/slide-5.jpg");
+    background-image: url("/img/8.jpg");
     position: relative;
     width: 100%;
     height: 65rem;
@@ -10,7 +10,7 @@
 
     &__p-holder-1 {
       font-weight: 200;
-      background-color: #dd6233;
+      background-color: var(--color-primary);
       z-index: 10;
       opacity: 0.7;
       text-align: center;
@@ -18,8 +18,8 @@
       position: absolute;
       width: 50rem;
       height: 10rem;
-      top: 10%;
-      left: 77%;
+      top: 23%;
+      left: 61%;
       transform: translate(-50%, -50%);
       transition: all .2s;
       animation: moveInRight 1.7s ease-out;
@@ -35,8 +35,8 @@
         text-align: center;
         width: 50rem;
         position: absolute;
-        top: 30%;
-        left: 77%;
+        top: 37%;
+        left: 67%;
         width: 50rem;
         height: 10rem;
         transform: translate(-50%, -50%);
@@ -57,9 +57,9 @@
     z-index: 10;
     text-align: center;
     width: 50rem;
-    top: 10%;
+    top: 23%;
     transform: translate(-50%, -50%);
-    left: 77%;
+    left: 61%;
     transition: all .2s;
     animation: appear 1.8s ease;
     
@@ -67,7 +67,7 @@
   }
   
   &__p-economy-2{
-    color:#505a62;
+    color:var(--color-primary-2);
     font-size: 2.5rem;
     font-weight: 200;
     line-height: 1.2;
@@ -75,8 +75,8 @@
     text-align: center;
     width: 50rem;
     position: absolute;
-    top: 30%;
-    left: 77%;
+    top: 37%;
+    left: 67%;
     
     transform: translate(-50%, -50%);
     transition: all .2s;
@@ -89,6 +89,6 @@
 
 .economy {
     font-size: 3rem;
-    color: #de6133;
+    color: var(--color-primary);
     
 }
