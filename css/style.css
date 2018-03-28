@@ -117,13 +117,14 @@ body {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   width: 20rem;
   margin: 0 auto;
+  border-top: 1rem solid var(--color-primary);
   height: 15rem;
   background-color: var(--color-primary-2); }
 
 .heading-heading-how-we-work {
   color: white;
   font-size: 2.6rem;
-  padding: 2rem; }
+  padding: 1rem; }
 
 .receipt {
   color: var(--color-primary); }
@@ -153,7 +154,7 @@ body {
   margin-top: 4rem !important; }
 
 .u-margin-top-big {
-  margin-top: 8rem !important; }
+  margin-top: 6rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
@@ -172,14 +173,14 @@ body {
     color: var(--color-primary-2);
     line-height: 1.7;
     font-size: 1.6rem;
-    padding: 1rem 2rem;
+    padding: 3rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
     flex: 0 0 40%; }
   .car-block__four {
-    border: 1px solid #de6133;
+    border: 1px solid var(--color-primary);
     border-radius: 50%;
-    background-color: #dd6233;
+    background-color: var(--color-primary);
     height: 3rem;
     color: white;
     display: inline-block;
@@ -234,12 +235,7 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: url("/img/test.jpg");
       background-position: center; }
-    .card__picture--2 {
-      background-image: url(../img/test.jpg); }
-    .card__picture--3 {
-      background-image: url(../img/test.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -320,13 +316,13 @@ body {
         font-size: 4rem; } }
 
 .how-we-work-box {
+  height: 25rem;
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: var(--color-primary-2);
   padding: 2.5rem;
-  height: 20rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -341,11 +337,16 @@ body {
   left: 0;
   width: 5rem;
   height: 5rem;
-  background-color: #e28009; }
+  background-color: var(--color-primary); }
   .span-box__span {
     font-size: 3rem;
     line-height: 1.5;
     color: white; }
+
+.icon {
+  fill: var(--color-primary-2);
+  width: 5rem;
+  height: 5rem; }
 
 .footer {
   background-color: #333;

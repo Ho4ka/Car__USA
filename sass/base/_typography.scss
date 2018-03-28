@@ -46,13 +46,14 @@ body {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     width: 20rem;
     margin: 0 auto;
+    border-top: 1rem solid var(--color-primary);
     height: 15rem;
     background-color: var(--color-primary-2);
 }
 .heading-heading-how-we-work{
     color: white;
     font-size: 2.6rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .receipt{

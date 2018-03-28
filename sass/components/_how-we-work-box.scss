@@ -1,22 +1,24 @@
 .how-we-work-box {
+height: 25rem;
 background-color: rgba(255, 255, 255, 0.9);
 position: relative;
 font-size: 1.6rem;
 font-family: "Roboto", sans-serif;
 color: var(--color-primary-2);
 padding: 2.5rem;
-height: 20rem;
 text-align: center;
 border-radius: 3px;
 box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 transition: -webkit-transform .3s;
 transition: transform .3s;
 
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
 
-&:hover {
-    transform: translateY(-1.5rem) scale(1.03);
 }
-}
+
+
 
 .span-box {
     position: absolute;
@@ -24,11 +26,17 @@ transition: transform .3s;
     left: 0;
     width: 5rem;
     height: 5rem;
-    background-color:  #e28009;
+    background-color:  var(--color-primary);
 
     &__span {
         font-size: 3rem;
         line-height: 1.5;
         color: white;
     }
+}
+
+.icon {
+    fill: var(--color-primary-2);
+    width: 5rem;
+    height: 5rem;
 }
