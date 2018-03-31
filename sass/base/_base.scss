@@ -25,7 +25,7 @@ html {
 
 body {
   box-sizing: border-box;
-
+  position: relative;
   @include respond(tab-port) {
     padding: 0;
   }
@@ -35,8 +35,17 @@ body {
   width: 100%;
   max-width: 150rem;
   margin: 0 auto;
+  position: relative;
 }
 
 section {
   position: relative;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.white {
+  color: #fff;
 }

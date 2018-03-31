@@ -25,6 +25,12 @@ backface-visibility: hidden;
       transform: translate(-50%, -50%);
       transition: all .2s;
       animation: moveInRight 1.7s ease-out;
+
+      @media only screen and (max-width: $bp-medium) {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
      
     }
     
@@ -44,6 +50,12 @@ backface-visibility: hidden;
         transform: translate(-50%, -50%);
         animation: moveInBottom .2s ease;
         transition: all .1s;
+
+        @media only screen and (max-width: $bp-medium) {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+         }
        
       
       }
@@ -64,6 +76,12 @@ backface-visibility: hidden;
     left: 61%;
     transition: all .2s;
     animation: appear 1.8s ease;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     }
     
     
   }
@@ -83,6 +101,12 @@ backface-visibility: hidden;
     transform: translate(-50%, -50%);
     transition: all .2s;
     animation: appear 1s ease;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     }
   }
   
 }
