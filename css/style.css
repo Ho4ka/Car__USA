@@ -260,12 +260,12 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: url("/img/test.jpg");
+      background-image: url(../img/mazda.jpg);
       background-position: center; }
     .card__picture--2 {
-      background-image: url(../img/test.jpg); }
+      background-image: url(../img/mondeo.jpg); }
     .card__picture--3 {
-      background-image: url(../img/test.jpg); }
+      background-image: url(../img/venza.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
