@@ -405,6 +405,9 @@ body {
   transition: transform .3s; }
   .how-we-work-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  @media only screen and (max-width: 56.25em) {
+    .how-we-work-box {
+      height: 20rem; } }
 
 .span-box {
   position: absolute;
