@@ -33,6 +33,10 @@
     flex-direction: row;
     color: white;
     font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__social, &__contacts {
@@ -99,4 +103,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }

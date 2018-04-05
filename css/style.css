@@ -579,6 +579,9 @@ body {
     flex-direction: row;
     color: white;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__contactsAndSocial {
+        flex-direction: column; } }
   .footer__social, .footer__contacts {
     display: flex;
     flex-direction: column;
@@ -616,6 +619,9 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .navAndContact__wrapper {
+      flex-direction: column; } }
 
 .row {
   max-width: 114rem;
@@ -666,6 +672,10 @@ body {
   background-size: cover;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      display: flex;
+      flex-direction: column; } }
   .header__p-holder-1 {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
@@ -686,6 +696,11 @@ body {
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 56.25em) {
+      .header__p-holder-1 {
+        width: 85%;
+        height: 10rem;
+        display: flex; } }
   .header__p-holder-2 {
     font-weight: 200;
     position: absolute;
@@ -708,6 +723,11 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 56.25em) {
+      .header__p-holder-2 {
+        width: 90%;
+        height: 10rem;
+        display: flex; } }
   .header__p-economy-1 {
     color: white;
     font-size: 2.5rem;
@@ -727,6 +747,10 @@ body {
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 56.25em) {
+      .header__p-economy-1 {
+        font-size: 2rem;
+        width: 85%; } }
   .header__p-economy-2 {
     color: var(--color-primary-2);
     font-size: 2.5rem;
@@ -746,6 +770,10 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 56.25em) {
+      .header__p-economy-2 {
+        font-size: 2rem;
+        width: 90%; } }
 
 .economy {
   font-size: 3rem;

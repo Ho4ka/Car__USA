@@ -8,6 +8,13 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
+  @media only screen and (max-width: $bp-small) {
+  display: flex;
+  flex-direction: column;
+  }
+
+ 
+
   &__p-holder-1 {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
@@ -29,6 +36,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 85%;
+      height: 10rem;
+      display: flex;
+     
+    }
+
+   
   }
 
   &__p-holder-2 {
@@ -54,6 +70,13 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+      height: 10rem;
+      display: flex;
+     
+    }
   }
 
   &__p-economy-1 {
@@ -75,6 +98,13 @@
       top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+   
+      width: 85%;
+     
     }
   }
 
@@ -98,6 +128,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      
+      width: 90%;
+      
     }
   }
 }
