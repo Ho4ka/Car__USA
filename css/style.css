@@ -196,8 +196,12 @@ body {
         padding: 2rem; } }
     @media only screen and (max-width: 75em) {
       .car-block__p {
-        width: 80%;
         background-color: white; } }
+    @media only screen and (max-width: 56.25em) {
+      .car-block__p {
+        width: 80%;
+        padding: 1.5rem;
+        background-color: #ffffffc7; } }
   .car-block__four {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
@@ -560,6 +564,9 @@ body {
   font-size: 1.2rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 3rem; } }
   .footer__logo {
     text-align: center;
     font-size: 5rem;
@@ -567,6 +574,9 @@ body {
     font-weight: 400;
     color: white;
     padding: 0 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo {
+        font-size: 2.2rem; } }
   .footer__navigation, .footer__contacts {
     display: flex;
     flex-direction: column; }
