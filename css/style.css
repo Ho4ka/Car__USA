@@ -705,7 +705,8 @@ body {
       .header__p-holder-1 {
         top: 35%;
         left: 50%;
-        transform: translate(-50%, -50%); } }
+        transform: translate(-50%, -50%);
+        max-width: 55rem; } }
     @media only screen and (max-width: 56.25em) {
       .header__p-holder-1 {
         width: 85%;
@@ -732,7 +733,8 @@ body {
       .header__p-holder-2 {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); } }
+        transform: translate(-50%, -50%);
+        max-width: 60rem; } }
     @media only screen and (max-width: 56.25em) {
       .header__p-holder-2 {
         width: 90%;
@@ -1025,12 +1027,12 @@ body {
     .section-about {
       background-image: url(../img/car-how.png);
       background-size: cover;
-      background-position: 85%; } }
+      background-position: 85%;
+      height: 75rem; } }
 
 .section-how-we-work {
   background-image: url(../img/9.jpg);
   background-size: cover;
-  background-position: bottom;
   -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
   margin-top: -20rem;
@@ -1038,4 +1040,5 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-how-we-work {
       -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
-      clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%); } }
+      clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+      padding: 11rem 0; } }
