@@ -1,4 +1,13 @@
 .navigation {
+
+    &__logo {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    height: 10rem;
+    background-color: var(--color-primary-2);
+    }
     &__checkbox {
         display: none;
     }
