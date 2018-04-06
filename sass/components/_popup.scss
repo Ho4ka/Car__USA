@@ -11,6 +11,7 @@
   font-size: 1.6rem;
   line-height: 1.5;
   transition: all 0.3s;
+ 
 
   @supports (-webkit-backdrop-filter: blur(10px) or (backdrop-filter: blur(10px))) {
     -webkit-backdrop-filter: blur(10px);
@@ -30,16 +31,14 @@
     border-radius: 3px;
     display: flex;
     flex-direction: column;
+    
     overflow: hidden;
+    overflow-y: scroll;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s 0.2s;
 
-    @include respond(tab-port) {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+   
   }
 
   &__left {
@@ -47,11 +46,11 @@
     order: 1;
     margin-top: auto;
 
-    @include respond(tab-port) {
-      width: 100%;
-      display: flex;
-      height: 200px;
-    }
+    @media only screen and (max-width: $bp-small) {
+        flex-wrap: wrap;
+      }
+
+   
   }
 
   &__right {
@@ -61,6 +60,7 @@
     align-items: center;
     padding: 3rem 5rem;
     letter-spacing: 0.8px;
+    height: 450rem;
 
     &--heading {
         color: var(--color-primary);
@@ -72,12 +72,7 @@
       padding: 1.5rem 2.5rem;
     }
 
-    @include respond(tab-port) {
-      padding: 1.5rem 2.5rem;
-      width: 100%;
-      text-align: center;
-      order: 1;
-    }
+   
   }
 
   &__img {
