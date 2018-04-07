@@ -9,18 +9,35 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
+  @media only screen and (max-width: $bp-small) {
+    max-width: 100%;
+    position: relative;
+    background-color: #fff;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-0%, -0%);
+    transform: translate(-0%, -0%);
+}
+
 
 
   &__block:not(:last-child) {
     margin-right: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+   }
   }
   &__block {
-    width: 33%;
+    width: 33.3%;
     background-color: var(--color-primary-1);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 20rem;
+
+    
+
+    
     
 
     &:hover .contacts__icon {
@@ -39,6 +56,7 @@
     font-size: 1.4rem;
     letter-spacing: 1px;
     display: block;
+    text-align: center;
   }
 
   &__mail {
