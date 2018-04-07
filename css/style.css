@@ -65,8 +65,7 @@ html {
 
 body {
   box-sizing: border-box;
-  position: relative;
-  font-family: "Roboto", sans-serif; }
+  position: relative; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -186,7 +185,6 @@ body {
   .car-block__p {
     width: 50%;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
     color: var(--color-primary-2);
     line-height: 1.7;
     font-size: 1.6rem;
@@ -406,7 +404,6 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
   color: var(--color-primary-2);
   padding: 2.5rem;
   text-align: center;
@@ -473,7 +470,8 @@ body {
     transition: all 0.4s 0.2s; }
   .popup__left {
     display: flex;
-    order: 1; }
+    order: 1;
+    margin-top: auto; }
   .popup__right {
     display: flex;
     flex-direction: column;
@@ -1037,9 +1035,6 @@ body {
       height: 73rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      background-image: url(../img/car-how.png);
-      background-size: cover;
-      background-position: 85%;
       height: 75rem; } }
 
 .section-how-we-work {

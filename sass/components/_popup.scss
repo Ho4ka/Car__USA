@@ -44,6 +44,7 @@
   &__left {
     display: flex;
     order: 1;
+    margin-top: auto;
     
 
     @media only screen and (max-width: $bp-small) {
