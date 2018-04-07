@@ -8,8 +8,8 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-size: 1.4rem;
+  line-height: 1.3;
   transition: all 0.3s;
  
 
@@ -33,7 +33,7 @@
     flex-direction: column;
     
     overflow: hidden;
-    overflow-y: scroll;
+    
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s 0.2s;
@@ -44,10 +44,10 @@
   &__left {
     display: flex;
     order: 1;
-    margin-top: auto;
+    
 
     @media only screen and (max-width: $bp-small) {
-        flex-wrap: wrap;
+       
       }
 
    
@@ -60,7 +60,7 @@
     align-items: center;
     padding: 3rem 5rem;
     letter-spacing: 0.8px;
-    height: 450rem;
+    
 
     &--heading {
         color: var(--color-primary);
