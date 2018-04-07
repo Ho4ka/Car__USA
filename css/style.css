@@ -366,6 +366,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .contacts {
       max-width: 100%;
+      flex-direction: column;
+      height: auto;
       position: relative;
       background-color: #fff;
       top: 0%;
@@ -384,6 +386,12 @@ body {
     flex-direction: column;
     align-items: center;
     height: 20rem; }
+    .contacts__block:last-child {
+      padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .contacts__block {
+        height: auto;
+        width: 100%; } }
     .contacts__block:hover .contacts__icon {
       fill: #fff;
       height: 8rem;
