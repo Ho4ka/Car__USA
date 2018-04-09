@@ -100,8 +100,104 @@
             <span class="header__p-economy-2">Ми втілимо в життя вашу мрію, автомобіль з
                 <span class="economy"> економією 40%</span>
             </span>
-
+            <div class="callForAction">
+                <h2 class="callForAction-header">
+                    <span class="white">Підбір</span>  <span class="primary">автомобіля</span> 
+                </h2>
+                <p class="callForAction--p">
+                        Заповніть форму, і ми підберемо варіанти під ваші потреби.
+                </p>
+                <svg class="callForAction__icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+            </div>
         </header>
+
+        <section class="section-form">
+           
+            <form  class="form" method="POST" id="man-form">
+
+                
+
+                <div class="form__wrapper-1">
+
+                        <div class="form__select form__item">
+                                <select class="form__select-select" name="type" id="">
+                                        <option value="2018">Виберіть тип автомобіля</option>
+                                        <option value="">седан</option>
+                                        <option value="2017">купе</option>
+                                        <option value="2016">мінівен</option>
+                                        <option value="2015">пікап</option>
+                                        <option value="2014">позашляховик</option>
+                                       
+                                    </select>
+                        </div>
+                <input class="form__item" type="text" name="marka" placeholder="Марка бажаного авто">
+                <input class="form__item" type="text" name="model" placeholder="Модель бажаного авто">
+                <input class="form__item" type="text" name="price" placeholder="Ціна">
+               
+                
+              
+
+            </div>
+
+            <div class="form__wrapper-2">
+
+                <div class="form__select form__item">
+                        <select class="form__select-select" name="minYear" id="">
+                                <option value="2018">Виберіть рік авто (мінімальний)</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                </div>
+
+                <div class="form__select form__item">
+                        <select class="form__select-select" name="maxYear" id="">
+                                <option value="2018">Виберіть рік авто (максимальний)</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                </div>
+                <input class="form__item" type="tel" name="phone" placeholder="Ваш телефон">
+                <input class="form__item" type="mail" name="mail" placeholder="Ваш Email">
+            </div>
+            <button class="form-btn" type="submit">Надіслати</button>
+            </form>
+        </section>
 
 
 
