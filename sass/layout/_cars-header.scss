@@ -34,7 +34,7 @@
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 1);
     margin-left: 15rem;
     margin-bottom: 20rem;
-
+    opacity: 0.9;
 
     & span {
         font-size: 3rem;
@@ -54,7 +54,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      width: 90%;
+      width: 100%;
       margin-left: 0;
       height: 7rem;
       padding: 5rem;

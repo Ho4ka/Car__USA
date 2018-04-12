@@ -697,7 +697,8 @@ select {
     font-family: "Roboto", sans-serif;
     box-shadow: 0 1.5rem 4rem black;
     margin-left: 15rem;
-    margin-bottom: 20rem; }
+    margin-bottom: 20rem;
+    opacity: 0.9; }
     .cars-header__text span {
       font-size: 3rem;
       font-weight: 300;
@@ -711,7 +712,7 @@ select {
       color: var(--color-primary-2); }
     @media only screen and (max-width: 56.25em) {
       .cars-header__text {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
         height: 7rem;
         padding: 5rem;
