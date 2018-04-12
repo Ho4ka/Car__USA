@@ -45,7 +45,7 @@ select {
         height: 4rem;
         background: #424141;
         border: none;
-        text-align: center;
+        padding-left: 2rem;
         color: rgb(206, 206, 206);
         text-transform: uppercase;
         &::-webkit-input-placeholder {
@@ -99,7 +99,6 @@ select {
         padding: 0 0 0 .5em;
         color: rgb(206, 206, 206);
         cursor: pointer;
-        text-align-last: center;
         @media only screen and (max-width: $bp-medium) {
          font-size: 1.1rem;
       }

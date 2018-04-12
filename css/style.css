@@ -482,7 +482,7 @@ select {
     height: 4rem;
     background: #424141;
     border: none;
-    text-align: center;
+    padding-left: 2rem;
     color: #cecece;
     text-transform: uppercase; }
     .form__item::-webkit-input-placeholder {
@@ -522,8 +522,7 @@ select {
       margin: 0;
       padding: 0 0 0 .5em;
       color: #cecece;
-      cursor: pointer;
-      text-align-last: center; }
+      cursor: pointer; }
       @media only screen and (max-width: 56.25em) {
         .form__select-select {
           font-size: 1.1rem; } }
