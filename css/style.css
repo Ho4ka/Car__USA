@@ -969,7 +969,7 @@ select {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .callForAction {
-      width: 43rem;
+      width: 42rem;
       font-size: 1.3rem;
       text-align: center; } }
   .callForAction-header {
