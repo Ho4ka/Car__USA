@@ -58,6 +58,25 @@ ORDER: Base + typography > general layout + grid > page layout > components
   100% {
     margin-top: 0; } }
 
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; }
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(240, 237, 237, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  font-size: 1.4rem;
+  letter-spacing: 1px; }
+
 *,
 *::before,
 *::after {
@@ -447,9 +466,17 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    padding: 0 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__wrapper-1, .form__wrapper-2 {
+        flex-wrap: wrap;
+        justify-content: space-around; } }
   .form__item:not(:first-child) {
     margin-left: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__item:not(:first-child) {
+        margin-left: 0; } }
   .form__item {
     width: 25rem;
     height: 4rem;
@@ -460,6 +487,11 @@ select {
     text-transform: uppercase; }
     .form__item::-webkit-input-placeholder {
       color: #cecece; }
+    @media only screen and (max-width: 56.25em) {
+      .form__item {
+        width: 45%;
+        font-size: 1.1rem;
+        margin-top: 1.5rem; } }
   .form__select {
     position: relative;
     display: block;
@@ -490,10 +522,14 @@ select {
       margin: 0;
       padding: 0 0 0 .5em;
       color: #cecece;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align-last: center; }
+      @media only screen and (max-width: 56.25em) {
+        .form__select-select {
+          font-size: 1.1rem; } }
   .form-btn {
     margin-top: 2.5rem;
-    width: 30rem;
+    width: 25rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -501,7 +537,11 @@ select {
     border: none;
     background-color: var(--color-primary);
     color: #fff;
-    border: none; }
+    border: none;
+    transition: .2s ease-in-out; }
+    @media only screen and (max-width: 56.25em) {
+      .form-btn {
+        width: 22rem; } }
 
 .how-we-work-box {
   height: 25rem;
@@ -928,6 +968,11 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .callForAction {
+      width: 43rem;
+      font-size: 1.3rem;
+      text-align: center; } }
   .callForAction-header {
     letter-spacing: 1px;
     font-weight: 100;
@@ -1216,3 +1261,6 @@ select {
   background-color: var(--color-primary-2);
   height: 27rem;
   padding-top: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-form {
+      height: 43rem; } }

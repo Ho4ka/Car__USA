@@ -23,10 +23,20 @@ select {
         justify-content: center;
         align-items: center;
         margin-top: 2.5rem;
+        padding: 0 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
     }
     
     &__item:not(:first-child) {
         margin-left: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+          margin-left: 0;
+      }
     }
 
     &__item{
@@ -41,6 +51,15 @@ select {
         &::-webkit-input-placeholder {
             color: rgb(206, 206, 206);
         }
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 45%;
+          font-size: 1.1rem;
+          margin-top: 1.5rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+       
+    }
     }
   &__select {
     position: relative;
@@ -80,13 +99,17 @@ select {
         padding: 0 0 0 .5em;
         color: rgb(206, 206, 206);
         cursor: pointer;
+        text-align-last: center;
+        @media only screen and (max-width: $bp-medium) {
+         font-size: 1.1rem;
+      }
             
     }
   }
 
   &-btn {
     margin-top: 2.5rem;
-    width: 30rem;
+    width: 25rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -96,6 +119,11 @@ select {
     color: #fff;
     
     border: none;
+    transition: .2s ease-in-out;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 22rem;
+  }
   }
 }
 
