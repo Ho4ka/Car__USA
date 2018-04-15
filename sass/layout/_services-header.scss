@@ -1,0 +1,21 @@
+.services-header {
+  height: 50rem;
+  background-image: 
+//   linear-gradient(
+//       to right bottom,
+//       rgba(10, 10, 10, 0.521),
+//       rgba(20, 20, 20, 0.473)
+//     ),
+    url("../img/services-header.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+
+  &-h1 {
+      text-align: center;
+      padding-top: 15rem;
+      color: white;
+      font-size: 5rem;
+      font-weight: 100;
+  }
+}

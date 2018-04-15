@@ -129,7 +129,7 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 2rem;
-
+      padding: 0 0.7rem;
       width: 90%;
     }
   }
@@ -177,16 +177,16 @@ text-align: center;
    &--p{
     font-size: 1.6rem;
     color: white;
-    margin: 1rem;
+    margin: 1rem 2rem;
     letter-spacing: 1px;
    }
 
    &__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 7rem;
+    width: 7rem;
     display: block;
     fill: var(--color-primary);
-    animation: arrowDown 1s  ease-in;
+    animation: arrowDown 2s  ease-in;
     animation-iteration-count: infinite;
 
    

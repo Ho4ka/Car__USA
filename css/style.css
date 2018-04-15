@@ -52,11 +52,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @keyframes arrowDown {
   0% {
-    margin-top: 2.5px; }
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
   50% {
-    margin-top: 5px; }
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(5);
+    transform: scale(0.5); }
   100% {
-    margin-top: 0; } }
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); } }
 
 /* Grow Shadow */
 .hvr-grow-shadow {
@@ -76,6 +82,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
   transform: scale(1.1);
   font-size: 1.4rem;
   letter-spacing: 1px; }
+
+@keyframes carMove {
+  0% {
+    opacity: 0;
+    left: -150rem; }
+  50% {
+    opacity: 0.5;
+    left: -125rem; }
+  100% {
+    left: 0;
+    opacity: 1; } }
 
 *,
 *::before,
@@ -484,7 +501,13 @@ select {
     border: none;
     padding-left: 2rem;
     color: #cecece;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    outline: none;
+    transition: all .1s;
+    border-radius: .25em;
+    box-sizing: border-box; }
+    .form__item:focus {
+      border-bottom: 1px solid #f0753c; }
     .form__item::-webkit-input-placeholder {
       color: #cecece; }
     @media only screen and (max-width: 56.25em) {
@@ -536,6 +559,7 @@ select {
     border: none;
     background-color: var(--color-primary);
     color: #fff;
+    border-radius: .25em;
     border: none;
     transition: .2s ease-in-out; }
     @media only screen and (max-width: 56.25em) {
@@ -717,6 +741,47 @@ select {
         height: 7rem;
         padding: 5rem;
         margin-bottom: 6rem; } }
+
+.customs-clearance {
+  height: 50rem;
+  -webkit-clip-path: polygon(0 0, 100% 27%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 27%, 100% 83%, 0% 100%);
+  margin-top: -15rem;
+  background-image: url("../img/clearance.jpg");
+  background-size: cover; }
+
+.delivery {
+  height: 75rem;
+  -webkit-clip-path: polygon(0 80%, 100% 100%, 100% 0, 50% 20%, 0 0);
+  clip-path: polygon(0 80%, 100% 100%, 100% 0, 50% 20%, 0 0);
+  margin-top: -15rem;
+  background: white;
+  color: var(--color-primary-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px; }
+  .delivery-img {
+    width: 15rem;
+    margin-top: 15rem;
+    position: relative;
+    display: block;
+    transition: all .2s;
+    animation: carMove 3s  ease; }
+  .delivery-header {
+    margin-top: 1rem; }
+  .delivery__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    margin-top: 3rem; }
+  .delivery-p {
+    width: 40%;
+    height: 30rem;
+    margin: 2rem 4rem; }
 
 .footer {
   background-color: #333;
@@ -947,6 +1012,7 @@ select {
     @media only screen and (max-width: 56.25em) {
       .header__p-economy-2 {
         font-size: 2rem;
+        padding: 0 0.7rem;
         width: 90%; } }
 
 .economy {
@@ -982,14 +1048,14 @@ select {
   .callForAction--p {
     font-size: 1.6rem;
     color: white;
-    margin: 1rem;
+    margin: 1rem 2rem;
     letter-spacing: 1px; }
   .callForAction__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 7rem;
+    width: 7rem;
     display: block;
     fill: var(--color-primary);
-    animation: arrowDown 1s  ease-in;
+    animation: arrowDown 2s  ease-in;
     animation-iteration-count: infinite; }
 
 .navigation__logo {
@@ -1141,6 +1207,19 @@ select {
     line-height: 3rem;
     font-size: 5rem; }
 
+.services-header {
+  height: 50rem;
+  background-image: url("../img/services-header.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%); }
+  .services-header-h1 {
+    text-align: center;
+    padding-top: 15rem;
+    color: white;
+    font-size: 5rem;
+    font-weight: 100; }
+
 .nav-top {
   display: flex;
   align-items: center;
@@ -1178,50 +1257,6 @@ select {
   @media only screen and (max-width: 56.25em) {
     .nav__list {
       display: none; } }
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: var(--color-primary-2);
-  color: white;
-  border: none;
-  font-size: 1.7rem;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  line-height: 1.4; }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--color-primary-2);
-  min-width: 160px;
-  z-index: 1; }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd; }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  color: var(--color-primary); }
 
 .section-about {
   display: flex;

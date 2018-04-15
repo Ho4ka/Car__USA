@@ -48,6 +48,14 @@ select {
         padding-left: 2rem;
         color: rgb(206, 206, 206);
         text-transform: uppercase;
+       outline: none;
+       transition: all .1s;
+       border-radius: .25em;
+       box-sizing: border-box;
+
+        &:focus {
+          border-bottom: 1px solid $color-primary;
+        }
         &::-webkit-input-placeholder {
             color: rgb(206, 206, 206);
         }
@@ -116,7 +124,7 @@ select {
     border: none;
     background-color: var(--color-primary);
     color: #fff;
-    
+    border-radius: .25em;
     border: none;
     transition: .2s ease-in-out;
 
