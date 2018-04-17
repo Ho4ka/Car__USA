@@ -310,7 +310,7 @@
             </div>
         </section>
         <section class="section-about">
-            <div class="u-center-text u-margin-top-big">
+            <div class="u-center-text">
                 <h2 class="heading-secondary">Про
                     <span class="receipt">Нас</span>
                 </h2>
@@ -504,7 +504,7 @@
 
                     
                 <figure>
-                    <img src="img/mazda-1.jpg" alt="Tour photo" class="popup__img">
+                    <img id="theImage" src="img/mazda-1.jpg"  onClick="makeFullScreen()" alt="Tour photo" class="popup__img">
                 </figure>
                 <figure>
                     <img src="img/mazda-2.jpg" alt="Tour photo" class="popup__img">
@@ -685,6 +685,46 @@
             },
         })
     </script>
+
+<style>
+        .fullscreen:-webkit-full-screen {
+        width: auto !important;
+        height: auto !important;
+        margin:auto !important;
+    }
+       .fullscreen:-moz-full-screen {
+        width: auto !important;
+        height: auto !important;
+        margin:auto !important;
+    }
+       .fullscreen:-ms-fullscreen {
+        width: auto !important;
+        height: auto !important;
+        margin:auto !important;
+    }     
+       </style>
+       <script>
+          function makeFullScreen() {
+           var divObj = document.getElementById("theImage");
+         //Use the specification method before using prefixed versions
+        if (divObj.requestFullscreen) {
+          divObj.requestFullscreen();
+        }
+        else if (divObj.msRequestFullscreen) {
+          divObj.msRequestFullscreen();               
+        }
+        else if (divObj.mozRequestFullScreen) {
+          divObj.mozRequestFullScreen();      
+        }
+        else if (divObj.webkitRequestFullscreen) {
+          divObj.webkitRequestFullscreen();       
+        } else {
+          console.log("Fullscreen API is not supported");
+        } 
+  
+      }
+       </script>
+  
 </body>
 
 </html>
