@@ -829,7 +829,7 @@ select {
     @media only screen and (max-width: 56.25em) {
       .customs-clearance-p {
         width: 100%;
-        padding: 1rem 2rem; } }
+        padding: 0 2rem; } }
     .customs-clearance-p .arrow {
       color: var(--color-primary);
       margin: 0 1rem; }
