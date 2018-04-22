@@ -810,7 +810,8 @@ select {
       margin-top: 2rem;
       -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
-      height: auto; } }
+      height: auto;
+      padding-bottom: 15rem; } }
   .customs-clearance h2 {
     color: white; }
   .customs-clearance-information {
@@ -829,7 +830,7 @@ select {
     @media only screen and (max-width: 56.25em) {
       .customs-clearance-p {
         width: 100%;
-        padding: 0 2rem; } }
+        padding: 1rem 2rem; } }
     .customs-clearance-p .arrow {
       color: var(--color-primary);
       margin: 0 1rem; }
