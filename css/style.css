@@ -856,7 +856,8 @@ select {
   @media only screen and (max-width: 56.25em) {
     .delivery {
       -webkit-clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 10%, 0 0);
-      clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 10%, 0 0); } }
+      clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 10%, 0 0);
+      height: 75rem; } }
   .delivery__heading-icon {
     display: flex;
     align-items: center;
