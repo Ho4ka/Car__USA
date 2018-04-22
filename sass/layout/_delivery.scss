@@ -1,5 +1,6 @@
 .delivery {
-  height: 85rem;
+    font-family: "Roboto", sans-serif;
+  height: 70rem;
   // background-image: linear-gradient(to right bottom, rgba(32, 32, 30, 0.795), rgba(34, 33, 32, 0.8)), url('../img/clearance.jpg');
   // background-size: cover;
   -webkit-clip-path: polygon(0 80%, 100% 100%, 100% 0, 50% 20%, 0 0);
@@ -13,7 +14,30 @@
   align-items: center;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  font-weight: 300;
 
+
+  @media only screen and (max-width: $bp-medium) {
+    -webkit-clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 20%, 0 0);
+  clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 20%, 0 0);
+    
+   }
+
+
+
+  &__heading-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 34rem;
+    align-self: flex-start;
+    @media only screen and (max-width: $bp-medium) {
+        order: 0;
+        margin-bottom:0;
+        display: block;
+        margin:  0 auto; 
+       }
+  }
   &-img {
     width: 10rem;
     margin-top: 5rem;
@@ -21,6 +45,11 @@
     display: block;
     transition: all .5s;
     animation: carMove 1s  ease;
+
+    @media only screen and (max-width: $bp-medium) {
+       margin-top: 0;
+        
+       }
    
   }
   
@@ -30,12 +59,16 @@
       margin-bottom: 0;
   }
 
-  &__column {
+  .delivery-row {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 2rem;
-      margin-top: 3rem;
+      margin-top: 10rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+       }
       
   }
 
@@ -43,5 +76,14 @@
       width: 40%;
       height: 30rem;
       margin: 2rem 4rem;
+     
+
+      @media only screen and (max-width: $bp-medium) {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin: 1rem 2rem;
+        
+       }
   }
 }

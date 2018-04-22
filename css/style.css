@@ -159,9 +159,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
   font-weight: 500;
@@ -638,7 +635,6 @@ select {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s 0.2s; }
@@ -749,8 +745,54 @@ select {
         padding: 5rem;
         margin-bottom: 6rem; } }
 
+.certification {
+  font-family: "Roboto", sans-serif;
+  height: 50rem;
+  background: white;
+  color: var(--color-primary-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 300; }
+  @media only screen and (max-width: 56.25em) {
+    .certification {
+      height: auto; } }
+  .certification-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .certification-row {
+        flex-direction: column; } }
+  .certification-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 23rem;
+    align-self: flex-start; }
+    @media only screen and (max-width: 56.25em) {
+      .certification-icon {
+        margin-bottom: 0;
+        align-self: center; } }
+  .certification-img {
+    width: 10rem; }
+  .certification-p {
+    width: 40%;
+    height: 30rem;
+    margin: 2rem 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .certification-p {
+        order: 1;
+        width: 100%;
+        padding: 1rem 2rem;
+        height: auto; } }
+
 .customs-clearance {
-  height: 70rem;
+  height: 95rem;
   -webkit-clip-path: polygon(0 0, 100% 27%, 100% 83%, 0% 100%);
   clip-path: polygon(0 0, 100% 27%, 100% 83%, 0% 100%);
   margin-top: -17rem;
@@ -759,24 +801,43 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .customs-clearance {
+      margin-top: 0;
+      -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+      height: auto;
+      padding-bottom: 15rem; } }
   .customs-clearance h2 {
     color: white; }
   .customs-clearance-information {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-around;
+    align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .customs-clearance-information {
+        flex-direction: column; } }
   .customs-clearance-p {
     width: 50%;
     font-size: 1.5rem;
     color: white;
     letter-spacing: 1px;
-    font-weight: 700; }
+    font-weight: 300; }
+    @media only screen and (max-width: 56.25em) {
+      .customs-clearance-p {
+        width: 100%;
+        padding: 1rem 2rem; } }
+    .customs-clearance-p .arrow {
+      color: var(--color-primary);
+      margin: 0 1rem; }
   .customs-clearance-figure {
     width: 40rem; }
     .customs-clearance-figure__img {
       width: 100%; }
 
 .delivery {
-  height: 85rem;
+  font-family: "Roboto", sans-serif;
+  height: 70rem;
   -webkit-clip-path: polygon(0 80%, 100% 100%, 100% 0, 50% 20%, 0 0);
   clip-path: polygon(0 80%, 100% 100%, 100% 0, 50% 20%, 0 0);
   margin-top: -17rem;
@@ -787,7 +848,24 @@ select {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-weight: 300; }
+  @media only screen and (max-width: 56.25em) {
+    .delivery {
+      -webkit-clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 20%, 0 0);
+      clip-path: polygon(0 95%, 100% 100%, 100% 0, 50% 20%, 0 0); } }
+  .delivery__heading-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 34rem;
+    align-self: flex-start; }
+    @media only screen and (max-width: 56.25em) {
+      .delivery__heading-icon {
+        order: 0;
+        margin-bottom: 0;
+        display: block;
+        margin: 0 auto; } }
   .delivery-img {
     width: 10rem;
     margin-top: 5rem;
@@ -795,19 +873,31 @@ select {
     display: block;
     transition: all .5s;
     animation: carMove 1s  ease; }
+    @media only screen and (max-width: 56.25em) {
+      .delivery-img {
+        margin-top: 0; } }
   .delivery-header {
     margin-top: 1rem;
     margin-bottom: 0; }
-  .delivery__column {
+  .delivery .delivery-row {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
-    margin-top: 3rem; }
+    margin-top: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .delivery .delivery-row {
+        flex-direction: column; } }
   .delivery-p {
     width: 40%;
     height: 30rem;
     margin: 2rem 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .delivery-p {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin: 1rem 2rem; } }
 
 .footer {
   background-color: #333;
@@ -1238,13 +1328,32 @@ select {
   background-image: url("../img/services-header.jpg");
   background-size: cover;
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
-  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%); }
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .services-header {
+      height: 35rem; } }
+  .services-header__text {
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background: #ffffffc7;
+    width: 90rem;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .services-header__text {
+        margin-bottom: 10rem; } }
   .services-header-h1 {
     text-align: center;
-    padding-top: 15rem;
-    color: white;
+    color: var(--color-primary-2);
     font-size: 5rem;
     font-weight: 100; }
+    @media only screen and (max-width: 56.25em) {
+      .services-header-h1 {
+        font-size: 3rem; } }
 
 .nav-top {
   display: flex;
