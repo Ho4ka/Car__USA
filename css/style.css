@@ -1345,7 +1345,8 @@ select {
     justify-content: center; }
     @media only screen and (max-width: 56.25em) {
       .services-header__text {
-        margin-bottom: 10rem; } }
+        margin-bottom: 10rem;
+        width: 40rem; } }
   .services-header-h1 {
     text-align: center;
     color: var(--color-primary-2);
