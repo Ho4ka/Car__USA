@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118658829-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118658829-1');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -136,17 +147,17 @@
             <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Головна</a>
+                            <a href="index.html" class="footer__link">Головна</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Автомобілі</a>
+                            <a href="cars.html" class="footer__link">Автомобілі</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Послуги</a>
+                            <a href="services.html" class="footer__link">Послуги</a>
                         </li>
                         
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Контакти</a>
+                            <a href="contacts.html" class="footer__link">Контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -164,15 +175,32 @@
                         <h4 class="footer__social-header">
                             <span class="white">Дзвоніть</span>  <span class="primary">нам</span> 
                         </h4>
-                        <a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>
-                        <a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>
+                        <a class="footer__social-phone" href="tel:+380-67-850-1111">+380-67-850-1111 </a>
+                        <!--<a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>-->
                     </div>
                 </div>
 
             </div>
+            <div class="footer__bottom">
+                <a  href="https://www.instagram.com/car4you.lviv/">
+                    <svg class="icon footer__bottom-icon">
+
+                        <use xlink:href="img/sprite.svg#icon-instagram">
+
+                        </use>
+
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/car4you.lviv/">
+                    <svg class="icon footer__bottom-icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                    </svg>
+                </a>
+            </div>
 
 
-    </footer>
+
+        </footer>
         <!-- <script src="swiper/swiper.esm.bundle.js"></script> 
 
     <script src="swiper/swiper.esm.js"></script> -->

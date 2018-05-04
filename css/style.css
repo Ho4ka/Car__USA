@@ -83,23 +83,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.4rem;
   letter-spacing: 1px; }
 
-@keyframes carMove {
-  0% {
-    -webkit-transform: scale(-1);
-    transform: scale(-1);
-    opacity: 0;
-    left: -150rem; }
-  50% {
-    -webkit-transform: scale(-0.5);
-    transform: scale(-0.5);
-    opacity: 0.5;
-    left: -125rem; }
-  100% {
-    left: 0;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
 *,
 *::before,
 *::after {
@@ -109,6 +92,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  html input[type=number]::-webkit-inner-spin-button,
+  html input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
   @media only screen and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
@@ -319,7 +306,15 @@ body {
     .card__picture--2 {
       background-image: url(../img/mondeo.jpg); }
     .card__picture--3 {
-      background-image: url(../img/venza.jpg); }
+      background-image: url(../img/audi_a4.jpg); }
+    .card__picture--4 {
+      background-image: url(../img/kia-soul.jpg);
+      background-position: center; }
+    .card__picture--5 {
+      background-image: url(../img/nissan-leaf-asphalt.jpg); }
+    .card__picture--6 {
+      background-image: url(../img/nissan-leaf-white.jpg);
+      background-position: center; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -788,8 +783,7 @@ select {
     margin-top: 5rem;
     position: relative;
     display: block;
-    transition: all .5s;
-    animation: carMove 1s  ease; }
+    transition: all .5s; }
     @media only screen and (max-width: 56.25em) {
       .delivery-img {
         margin-top: 0; } }
@@ -818,7 +812,7 @@ select {
 
 .footer {
   background-color: #333;
-  padding: 10rem;
+  padding: 10rem 10rem 0 10rem;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column; }
@@ -881,6 +875,18 @@ select {
     color: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
+  .footer__bottom {
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    width: 20rem;
+    height: 10rem; }
+    .footer__bottom-icon {
+      fill: white;
+      transition: all .2s; }
+      .footer__bottom-icon:hover {
+        fill: var(--color-primary);
+        transform: rotate(5deg) scale(1.3); }
 
 .navAndContact__wrapper {
   display: flex;

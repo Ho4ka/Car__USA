@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118658829-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118658829-1');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +26,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="swiper/swiper.css">
 
-
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>Car 4 you</title>
@@ -19,483 +33,493 @@
 
 <body>
 
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon"> &nbsp; </span>
-        </label>
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"> &nbsp; </span>
+    </label>
 
-        <div class="navigation__background">&nbsp;</div>
-
-
-       
-        <nav class="navigation__nav">
-                <div class="navigation__logo logo__box">
-                        <p class="logo__box-logo">
-                            <span class="logo__box-car">car</span>
-                            <span class="logo__box-four">4</span>
-                            <span class="logo__box-you">you</span>
-                        </p>
-                    </div>
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="navigation__link">ГОЛОВНА</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="cars.html" class="navigation__link">АВТОМОБІЛІ</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="services.html" class="navigation__link">ПОСЛУГИ</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="contacts.html" class="navigation__link">КОНТАКТИ</a>
-                </li>
-               
-            </ul>
-        </nav>
-    </div>
-
-    <div class="container">
-        <nav class="nav-top">
-            <div class="logo__box">
-                <p class="logo__box-logo">
-                    <span class="logo__box-car">car</span>
-                    <span class="logo__box-four">4</span>
-                    <span class="logo__box-you">you</span>
-                </p>
-            </div>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="index.html" class="nav__list-link">Головна</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="cars.html" class="nav__list-link">Автомобілі</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="services.html" class="nav__list-link">Послуги</a>
-                   
-                </li>
-                <li class="nav__list-item">
-                    <a href="contacts.html" class="nav__list-link">Контакти</a>
-                </li>
+    <div class="navigation__background">&nbsp;</div>
 
 
-            </ul>
-        </nav>
+    <nav class="navigation__nav">
+        <div class="navigation__logo logo__box">
+            <p class="logo__box-logo">
+                <span class="logo__box-car">car</span>
+                <span class="logo__box-four">4</span>
+                <span class="logo__box-you">you</span>
+            </p>
+        </div>
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="index.html" class="navigation__link">ГОЛОВНА</a>
+            </li>
+            <li class="navigation__item">
+                <a href="cars.html" class="navigation__link">АВТОМОБІЛІ</a>
+            </li>
+            <li class="navigation__item">
+                <a href="services.html" class="navigation__link">ПОСЛУГИ</a>
+            </li>
+            <li class="navigation__item">
+                <a href="contacts.html" class="navigation__link">КОНТАКТИ</a>
+            </li>
 
-        <header class="header">
-            <div class="header__p-holder-1"></div>
-            <div class="header__p-holder-2"></div>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <nav class="nav-top">
+        <div class="logo__box">
+            <p class="logo__box-logo">
+                <span class="logo__box-car">car</span>
+                <span class="logo__box-four">4</span>
+                <span class="logo__box-you">you</span>
+            </p>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">Головна</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="cars.html" class="nav__list-link">Автомобілі</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="services.html" class="nav__list-link">Послуги</a>
+
+            </li>
+            <li class="nav__list-item">
+                <a href="contacts.html" class="nav__list-link">Контакти</a>
+            </li>
 
 
-            <span class="header__p-economy-1">Доставка автомобілів з Америки та Канади</span>
-            <span class="header__p-economy-2">Ми втілимо в життя вашу мрію, автомобіль з
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="header__p-holder-1"></div>
+        <div class="header__p-holder-2"></div>
+        <span class="header__p-economy-1">Доставка автомобілів з Америки та Канади</span>
+        <span class="header__p-economy-2">Ми втілимо в життя вашу мрію, автомобіль з
                 <span class="economy"> економією 40%</span>
             </span>
-            <div class="callForAction">
-                <h2 class="callForAction-header">
-                    <span class="white">Підбір</span>  <span class="primary">автомобіля</span> 
-                </h2>
-                <p class="callForAction--p">
-                        Заповніть форму, і ми підберемо варіанти під ваші потреби.
-                </p>
-                <svg class="callForAction__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-                    </svg>
-            </div>
-        </header>
+        <div class="callForAction">
+            <h2 class="callForAction-header">
+                <span class="white">Підбір</span> <span class="primary">автомобіля</span>
+            </h2>
+            <p class="callForAction--p">
+                Заповніть форму, і ми підберемо варіанти під ваші потреби.
+            </p>
+            <svg class="callForAction__icon">
+                <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+        </div>
+    </header>
 
-        <section class="section-form">
-           
-            <form  class="form" method="POST" id="man-form">
+    <section class="section-form">
 
-                
+        <form class="form" method="POST" id="man-form">
 
-                <div class="form__wrapper-1">
+            <div class="form__wrapper-1">
 
-                        <div class="form__select form__item">
-                                <select class="form__select-select" name="type" id="">
-                                        <option value="2018">Виберіть тип автомобіля</option>
-                                        <option value="">седан</option>
-                                        <option value="2017">купе</option>
-                                        <option value="2016">мінівен</option>
-                                        <option value="2015">пікап</option>
-                                        <option value="2014">позашляховик</option>
-                                       
-                                    </select>
-                        </div>
-                <input class="form__item" type="text" name="marka" placeholder="Марка бажаного авто">
-                <input class="form__item" type="text" name="model" placeholder="Модель бажаного авто">
-                <input class="form__item" type="text" name="price" placeholder="Ціна">
-               
-                
-              
+                <div class="form__select form__item">
+                    <select class="form__select-select" required name="type" id="">
+                        <option value="">Виберіть тип автомобіля</option>
+                        <option value="">седан</option>
+                        <option value="2017">купе</option>
+                        <option value="2016">мінівен</option>
+                        <option value="2015">пікап</option>
+                        <option value="2014">позашляховик</option>
 
+                    </select>
+                </div>
+                <input class="form__item" required type="text" name="marka" placeholder="Марка бажаного авто">
+                <input class="form__item" required type="text" name="model" placeholder="Модель бажаного авто">
+                <input class="form__item" required type="text" name="price" placeholder="Ціна">
             </div>
 
             <div class="form__wrapper-2">
 
                 <div class="form__select form__item">
-                        <select class="form__select-select" name="minYear" id="">
-                                <option value="2018">Виберіть рік авто (мінімальний)</option>
-                                <option value="2018">2018</option>
-                                <option value="2017">2017</option>
-                                <option value="2016">2016</option>
-                                <option value="2015">2015</option>
-                                <option value="2014">2014</option>
-                                <option value="2013">2013</option>
-                                <option value="2012">2012</option>
-                                <option value="2011">2011</option>
-                                <option value="2010">2010</option>
-                                <option value="2009">2009</option>
-                                <option value="2008">2008</option>
-                                <option value="2007">2007</option>
-                                <option value="2006">2006</option>
-                                <option value="2005">2005</option>
-                                <option value="2004">2004</option>
-                                <option value="2003">2003</option>
-                                <option value="2002">2002</option>
-                                <option value="2001">2001</option>
-                                <option value="2000">2000</option>
-                            </select>
+                    <select class="form__select-select" name="minYear" required>
+                        <option value="">Виберіть рік авто (мінімальний)</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                    </select>
                 </div>
 
                 <div class="form__select form__item">
-                        <select class="form__select-select" name="maxYear" id="">
-                                <option value="2018">Виберіть рік авто (максимальний)</option>
-                                <option value="2018">2018</option>
-                                <option value="2017">2017</option>
-                                <option value="2016">2016</option>
-                                <option value="2015">2015</option>
-                                <option value="2014">2014</option>
-                                <option value="2013">2013</option>
-                                <option value="2012">2012</option>
-                                <option value="2011">2011</option>
-                                <option value="2010">2010</option>
-                                <option value="2009">2009</option>
-                                <option value="2008">2008</option>
-                                <option value="2007">2007</option>
-                                <option value="2006">2006</option>
-                                <option value="2005">2005</option>
-                                <option value="2004">2004</option>
-                                <option value="2003">2003</option>
-                                <option value="2002">2002</option>
-                                <option value="2001">2001</option>
-                                <option value="2000">2000</option>
-                            </select>
+                    <select required class="form__select-select" name="maxYear" id="">
+                        <option value="">Виберіть рік авто (максимальний)</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                    </select>
                 </div>
-                <input class="form__item" type="tel" required="required" name="phone" placeholder="Ваш телефон">
-                <input class="form__item" type="mail" required="required" name="mail" placeholder="Ваш Email">
+                <input class="form__item" required type="number" required="required" name="phone"
+                       placeholder="Ваш телефон">
+                <input class="form__item" required type="email" required="required" name="mail" placeholder="Ваш Email">
             </div>
             <button class="form-btn hvr-grow-shadow" type="submit">Надіслати</button>
-            </form>
-        </section>
+        </form>
+    </section>
 
+    <section class="section-tours u-margin-top-big  u-margin-bottom-big " id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary ">
+                Гарячі
+                <span class="receipt">пропозиції</span>
+            </h2>
+        </div>
 
-
-
-
-
-        <section class="section-tours u-margin-top-big  u-margin-bottom-big " id="section-tours">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary ">
-                    Гарячі
-                    <span class="receipt">пропозиції</span>
-                </h2>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--1">
                                     Mazda
                                     <br> CX-3
                                 </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li> Рік: 2017 </li>
-                                    <li>Пробіг: 5 000</li>
-                                    <li> Мотор: 2 Бензин</li>
-                                    <li>Коробка передач: Автомат</li>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li> Рік: 2017</li>
+                                <li>Пробіг: 5 000</li>
+                                <li> Мотор: 2 Бензин</li>
+                                <li>Коробка передач: Автомат</li>
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <!-- <p class="card__price-only">Only</p> -->
-                                    <p class="card__price-value">$19 800</p>
-                                </div>
-                                <a href="https://auto.ria.com/auto_mazda_cx_3_21701672.html" class="btn btn--white">Детальніше</a>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <!-- <p class="card__price-only">Only</p> -->
+                                <p class="card__price-value">$19 800</p>
                             </div>
+                            <a href="https://auto.ria.com/auto_mazda_cx_3_21701672.html" class="btn btn--white">Детальніше</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--2">
                                     FORD
                                     <br> MONDEO
                                 </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li> Рік: 2015 </li>
-                                    <li>Пробіг: 21 000</li>
-                                    <li> Мотор: 2.5 Газ/Бензин</li>
-                                    <li>Коробка передач: Автомат</li>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li> Рік: 2015</li>
+                                <li>Пробіг: 21 000</li>
+                                <li> Мотор: 2.5 Газ/Бензин</li>
+                                <li>Коробка передач: Автомат</li>
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-                        <div class="card__side card__side--back card__side--back-2">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <!-- <p class="card__price-only">Only</p> -->
-                                    <p class="card__price-value">$15 800</p>
-                                </div>
-                                <a href="https://auto.ria.com/auto_ford_mondeo_21702073.html" class="btn btn--white">Детальніше</a>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <!-- <p class="card__price-only">Only</p> -->
+                                <p class="card__price-value">$15 800</p>
                             </div>
+                            <a href="https://auto.ria.com/auto_ford_mondeo_21702073.html" class="btn btn--white">Детальніше</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--3">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--3">
-                                    TOYOTA
-                                    <br> VENZA
+                                    AUDI
+                                    <br> A4
                                 </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li> Рік: 2014 </li>
-                                    <li>Пробіг: 126 000</li>
-                                    <li> Мотор: 2.7 Бензин</li>
-                                    <li>Коробка передач: Автомат</li>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li> Рік: 2015</li>
+                                <li>Пробіг: 44 000</li>
+                                <li> Мотор: 2.0 Бензин</li>
+                                <li>Коробка передач: Автомат</li>
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <!-- <p class="card__price-only">Only</p> -->
-                                    <p class="card__price-value">$21 000</p>
-                                </div>
-                                <a href="https://auto.ria.com/auto_toyota_venza_21701906.html" class="btn btn--white">Детальніше</a>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <!-- <p class="card__price-only">Only</p> -->
+                                <p class="card__price-value">$21 500</p>
                             </div>
+                            <a href="https://auto.ria.com/auto_toyota_venza_21701906.html" class="btn btn--white">Детальніше</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section-about">
-            <div class="u-center-text">
-                <h2 class="heading-secondary">Про
-                    <span class="receipt">Нас</span>
-                </h2>
+        </div>
+    </section>
+    <section class="section-about">
+        <div class="u-center-text">
+            <h2 class="heading-secondary">Про
+                <span class="receipt">Нас</span>
+            </h2>
 
+        </div>
+        <div class="car-block">
+            <img class="car-block__img u-margin-top-medium " src="img//car-how.png" alt="Car">
+
+            <div class="car-block__p u-margin-top-medium ">
+                <h3 class="heading-tertiary ">Бажаєте найбезпечнішу та найвигіднішу доставку з Канади та Америки ?</h3>
+                <p> Тоді Вам до нас ! Компанія
+                    <span class="car-block__car"> Car</span>
+                    <span class="car-block__four">4</span>
+                    <span class="car-block__you">You </span>- це компанія професіоналів які зроблять все за Вас! Ми
+                    пропонуємо повний пакет послуг по доставці автомобілів будь-якого класу з Америки та Канади,
+                    розмитнення та ремонту.У нас можна придбати авто не лише з аукціонів і привезені під заказ, а в
+                    любий зручний час, Ви можете переглянути всі автомобілі які в наявності вже у Львові.
+                    Головна наша мета- це Ваші мрії втілити в життя, та перевершити очікування!!!
+                </p>
             </div>
-            <div class="car-block">
-                <img class="car-block__img u-margin-top-medium " src="img//car-how.png" alt="Car">
+        </div>
+    </section>
 
-                <div class="car-block__p u-margin-top-medium ">
-                    <h3 class="heading-tertiary ">Бажаєте найбезпечнішу та найвигіднішу доставку з Канади та Америки ?</h3>
-                    <p> Тоді Вам до нас ! Компанія
-                        <span class="car-block__car"> Car</span>
-                        <span class="car-block__four">4</span>
-                        <span class="car-block__you">You </span>- це компанія професіоналів які зроблять все за Вас! Ми пропонуємо повний пакет послуг по доставці автомобілів будь-якого класу з Америки та Канади, розмитнення та ремонту.У нас можна придбати авто не лише з аукціонів і привезені під заказ, а в любий зручний час, Ви можете переглянути всі автомобілі які в наявності вже у Львові.
-                        Головна наша мета- це Ваші мрії втілити в життя, та перевершити очікування!!!
+    <section class="section-how-we-work">
+        <div class="u-center-text  header-how-we-work  u-margin-bottom-big">
+            <h3 class="heading-tertiary heading-heading-how-we-work ">
+                Як все відбувається
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">1</span>
+                    </div>
+                    <svg class="icon icon__acquaintance">
+                        <use xlink:href="img/sprite.svg#icon-handshake-o"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Знайомство з клієнтом</h3>
+                    <p class="feature-box__text">
+                        Після залишення заявки або дзвінка на пряму до нас ми домовляємось про зустріч в офісі, де
+                        уважно вивчаємо ваші бажання.
                     </p>
                 </div>
             </div>
-        </section>
-
-        <section class="section-how-we-work">
-            <div class="u-center-text  header-how-we-work  u-margin-bottom-big">
-                <h3 class="heading-tertiary heading-heading-how-we-work ">
-                    Як все відбувається
-                </h3>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">1</span>
-                        </div>
-                        <svg class="icon icon__acquaintance">
-                            <use xlink:href="img/sprite.svg#icon-handshake-o"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Знайомство з клієнтом</h3>
-                        <p class="feature-box__text">
-                            Після залишення заявки або дзвінка на пряму до нас ми домовляємось про зустріч в офісі, де уважно вивчаємо ваші бажання.
-                        </p>
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">2</span>
                     </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">2</span>
-                        </div>
-                        <svg class="icon icon__search">
-                            <use xlink:href="img/sprite.svg#icon-search"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Пошук автомобіля</h3>
-                        <p class="feature-box__text">
-                            Під ваші потреби ми підбираємо самі вигідні варіанти, щоденно розглядаючи сотні лотів.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">3</span>
-                        </div>
-                        <svg class="icon icon__acquaintance">
-                            <use xlink:href="img/sprite.svg#icon-cart"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Покупка автомобіля</h3>
-                        <p class="feature-box__text">
-                            Вибраний вами автомобіль ми викуповуємо на аукціоні. Для Вашої зручності, Вам не потрібно перераховувати кошти в Америку
-                            чи Канаду - це все ми зробимо за Вас.
-                        </p>
-                    </div>
+                    <svg class="icon icon__search">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Пошук автомобіля</h3>
+                    <p class="feature-box__text">
+                        Під ваші потреби ми підбираємо самі вигідні варіанти, щоденно розглядаючи сотні лотів.
+                    </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">4</span>
-                        </div>
-                        <svg class="icon icon__acquaintance">
-                            <use xlink:href="img/sprite.svg#icon-clipboard"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Оформлення документів</h3>
-                        <p class="feature-box__text">
-                            Оформлення всієї супровідної документації для транспортування автомобіля.
-                        </p>
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">3</span>
                     </div>
+                    <svg class="icon icon__acquaintance">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Покупка автомобіля</h3>
+                    <p class="feature-box__text">
+                        Вибраний вами автомобіль ми викуповуємо на аукціоні. Для Вашої зручності, Вам не потрібно
+                        перераховувати кошти в Америку
+                        чи Канаду - це все ми зробимо за Вас.
+                    </p>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">5</span>
-                        </div>
-                        <svg class="icon icon__acquaintance">
-                            <use xlink:href="img/sprite.svg#icon-truck"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small"> Доставка автомобіля</h3>
-                        <p class="feature-box__text">
-                           Машини прибувають в німецький порт Бременхафен на вантажних кораблях в спеціальних контейнерах. 
-                        </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">4</span>
                     </div>
+                    <svg class="icon icon__acquaintance">
+                        <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Оформлення документів</h3>
+                    <p class="feature-box__text">
+                        Оформлення всієї супровідної документації для транспортування автомобіля.
+                    </p>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="how-we-work-box">
-                        <div class="span-box">
-                            <span class="span-box__span">6</span>
-                        </div>
-                        <svg class="icon icon__acquaintance">
-                            <use xlink:href="img/sprite.svg#icon-handshake-o"></use>
-                        </svg>
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Автомобіль під ключ</h3>
-                        <p class="feature-box__text">
-                           Ви получаєте вже повністю готовий до експлуатації авто з документами на українській реєстрації. 
-                        </p>
+            </div>
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">5</span>
                     </div>
+                    <svg class="icon icon__acquaintance">
+                        <use xlink:href="img/sprite.svg#icon-truck"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small"> Доставка автомобіля</h3>
+                    <p class="feature-box__text">
+                        Машини прибувають в німецький порт Бременхафен на вантажних кораблях в спеціальних контейнерах.
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="how-we-work-box">
+                    <div class="span-box">
+                        <span class="span-box__span">6</span>
+                    </div>
+                    <svg class="icon icon__acquaintance">
+                        <use xlink:href="img/sprite.svg#icon-handshake-o"></use>
+                    </svg>
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Автомобіль під ключ</h3>
+                    <p class="feature-box__text">
+                        Ви получаєте вже повністю готовий до експлуатації авто з документами на українській реєстрації.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__logo u-margin-bottom-big">
+            <p class="logo__box-logo">
+                <span class="logo__box-car">car</span>
+                <span class="logo__box-four">4</span>
+                <span class="logo__box-you">you</span>
+            </p>
+        </div>
+        <div class="navAndContact__wrapper">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="index.html" class="footer__link">Головна</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="cars.html" class="footer__link">Автомобілі</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="services.html" class="footer__link">Послуги</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a href="contacts.html" class="footer__link">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__contactsAndSocial">
+                <div class="footer__contacts">
+                    <h4 class="footer__contacts-header">
+                        <span class="white">Наша</span>
+                        <span class="primary">адреса</span>
+                    </h4>
+                    <p class="footer__contacts-adress">
+                        м. Львів вул Київська 1
+                    </p>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__social-header">
+                        <span class="white">Дзвоніть</span>
+                        <span class="primary">нам</span>
+                    </h4>
+                    <a class="footer__social-phone" href="tel:+380-67-850-1111">+380-67-850-1111 </a>
+                    <!--<a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>-->
                 </div>
             </div>
 
+        </div>
+        <div class="footer__bottom">
+            <a href="https://www.instagram.com/car4you.lviv/">
+                <svg class="icon footer__bottom-icon">
 
-        </section>
+                    <use xlink:href="img/sprite.svg#icon-instagram">
 
+                    </use>
 
-        <footer class="footer">
-            <div class="footer__logo u-margin-bottom-big">
-                <p class="logo__box-logo">
-                    <span class="logo__box-car">car</span>
-                    <span class="logo__box-four">4</span>
-                    <span class="logo__box-you">you</span>
-                </p>
-            </div>
-            <div class="navAndContact__wrapper">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Головна</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Автомобілі</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Послуги</a>
-                        </li>
-                       
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__contactsAndSocial">
-                    <div class="footer__contacts">
-                        <h4 class="footer__contacts-header">
-                            <span class="white">Наша</span>
-                            <span class="primary">адреса</span>
-                        </h4>
-                        <p class="footer__contacts-adress">
-                            м. Львів вул Київська 1
-                        </p>
-                    </div>
-                    <div class="footer__social">
-                        <h4 class="footer__social-header">
-                            <span class="white">Дзвоніть</span>
-                            <span class="primary">нам</span>
-                        </h4>
-                        <a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>
-                        <a class="footer__social-phone" href="tel:1-562-867-5309">+380-93-186-0331 </a>
-                    </div>
-                </div>
-
-            </div>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/car4you.lviv/">
+                <svg class="icon footer__bottom-icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                </svg>
+            </a>
+        </div>
 
 
-        </footer>
-        <!-- <script src="swiper/swiper.esm.bundle.js"></script> 
+    </footer>
+    <!-- <script src="swiper/swiper.esm.bundle.js"></script>
 
-    <script src="swiper/swiper.esm.js"></script> -->
+<script src="swiper/swiper.esm.js"></script> -->
 
-    </div>
+</div>
 
 
-  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

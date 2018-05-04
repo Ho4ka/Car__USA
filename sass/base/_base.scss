@@ -14,7 +14,11 @@ html {
   //This defines what 1rem is
   font-size: 62.5%; // 1 rem = 10px;  10px/16px =62.5%
 
-
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 
   @media only screen and (max-width: $bp-large) {
