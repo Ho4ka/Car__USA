@@ -400,23 +400,116 @@ body {
   font-weight: 200;
   letter-spacing: 1px; }
 
+.modal,
+.modal-1 {
+  background: dodgerblue;
+  height: 1px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease 0.5s, height 0.5s ease;
+  width: 0; }
+
+.content {
+  color: transparent;
+  font-family: 'Consolas', arial, sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translate3d(0, -50%, 0);
+  transition: color 0.5s ease;
+  width: 100%; }
+
+.label,
+.label-1 {
+  transition: color 0.5s ease 0.5s; }
+
+.input {
+  cursor: pointer;
+  display: block;
+  height: 0;
+  opacity: 0;
+  width: 0; }
+  .input:focus {
+    outline: none; }
+
+.input:checked {
+  height: 40px;
+  opacity: 1;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+  -webkit-appearance: none;
+  width: 40px; }
+  .input:checked::after, .input:checked:before {
+    border-top: 1px solid #FFF;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%; }
+  .input:checked::after {
+    transform: rotate(-45deg); }
+
+.input:checked + label,
+.input:checked + label-1 {
+  color: #FFF;
+  transition: color 0.5s ease; }
+
+.input:checked ~ .modal,
+.input:checked ~ .modal-1 {
+  height: 100%;
+  width: 100%;
+  transition: width 0.5s ease, height 0.5s ease 0.5s; }
+  .input:checked ~ .modal .content,
+  .input:checked ~ .modal-1 .content {
+    color: #FFF;
+    transition: color 0.5s ease 0.5s; }
+
 .cars-row {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 56.25em) {
+    .cars-row {
+      flex-direction: column; } }
+
+.cars-block-wrapper {
+  width: 51%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem; }
+  @media only screen and (max-width: 68.75em) {
+    .cars-block-wrapper {
+      margin: 0 .5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .cars-block-wrapper {
+      margin: 0;
+      width: 100%;
+      margin-top: 5rem; } }
 
 .cars-block {
-  width: 50%;
-  margin: 2rem;
+  width: 100%;
   background: white;
   display: flex; }
   .cars-block__img {
-    background-image: url("../img/mazda.jpg");
-    width: 40%;
+    width: 31rem;
     background-size: cover;
-    height: 18rem;
+    height: auto;
     background-position: center;
     transition: all .5s; }
+    @media only screen and (max-width: 56.25em) {
+      .cars-block__img {
+        width: 25rem; } }
+  .cars-block .img-1 {
+    background-image: url("../img/mazda.jpg"); }
+  .cars-block .img-2 {
+    background-image: url("../img/mondeo.jpg"); }
   .cars-block__img[tabindex="0"] {
     cursor: zoom-in; }
   .cars-block__img[tabindex="0"]:focus {
@@ -438,7 +531,7 @@ body {
     cursor: zoom-out; }
 
 .description {
-  width: 60%; }
+  width: 100%; }
   .description__price {
     font-size: 2.4rem;
     color: var(--color-primary);
@@ -464,6 +557,19 @@ body {
         font-size: 1.4rem;
         color: #868686;
         letter-spacing: 1px; }
+    .description__detail-button {
+      display: block;
+      width: 12rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      height: 3rem;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      background: var(--color-primary);
+      color: white;
+      text-align: center;
+      line-height: 28px;
+      text-decoration: none; }
 
 hr[role="tournament5"] {
   border: 0px solid;
@@ -471,6 +577,42 @@ hr[role="tournament5"] {
   background-image: linear-gradient(to right, transparent, rgba(172, 131, 83, 0.75), transparent);
   margin: 5px 0px;
   display: block; }
+
+.cars__images-wrapper {
+  display: flex; }
+
+.cars__images {
+  display: flex;
+  background: white;
+  margin-top: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .cars__images {
+      justify-content: center; } }
+  .cars__images-img:not(:last-child) {
+    margin-right: 1rem; }
+  .cars__images-img {
+    width: 7rem;
+    height: 7rem;
+    transition: all .5s; }
+  .cars__images-img[tabindex="0"] {
+    cursor: zoom-in; }
+  .cars__images-img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 120%;
+    max-height: 120%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, 0.4); }
+  .cars__images-img[tabindex="0"]:focus,
+  .cars__images-img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out; }
 
 .contacts {
   max-width: 65%;
