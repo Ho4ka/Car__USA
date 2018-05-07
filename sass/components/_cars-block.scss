@@ -176,6 +176,11 @@
 .description {
   width: 100%;
 
+  @media only screen and (max-width: $bp-small) {
+
+   width: 60%;
+  }
+
 
   &__price {
     font-size: 2.4rem;

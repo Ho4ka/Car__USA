@@ -99,6 +99,9 @@ html {
   @media only screen and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
@@ -532,6 +535,9 @@ body {
 
 .description {
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      width: 60%; } }
   .description__price {
     font-size: 2.4rem;
     color: var(--color-primary);
