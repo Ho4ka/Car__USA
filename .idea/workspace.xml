@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d215b10-0ba5-4236-86cb-1d46f5da5490" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/sass/components/_cars-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_cars-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars.html" beforeDir="false" afterPath="$PROJECT_DIR$/cars.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cars.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cars.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cars.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="178" column="34" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="34" />
+            <state relative-caret-position="166">
+              <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_cars-block.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_cars-block.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/components/_cars-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="395" selection-start-line="395" selection-end-line="395" selection-end-column="142" />
+            <state relative-caret-position="361">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -54,6 +54,7 @@
     <findStrings>
       <find>des</find>
       <find>myIm</find>
+      <find>.cars</find>
       <find>myImg</find>
     </findStrings>
   </component>
@@ -76,8 +77,8 @@
         <option value="$PROJECT_DIR$/sass/layout/_navigation.scss" />
         <option value="$PROJECT_DIR$/sass/abstracts/_variables.scss" />
         <option value="$PROJECT_DIR$/sass/base/_base.scss" />
-        <option value="$PROJECT_DIR$/cars.html" />
         <option value="$PROJECT_DIR$/sass/components/_cars-block.scss" />
+        <option value="$PROJECT_DIR$/cars.html" />
       </list>
     </option>
   </component>
@@ -184,12 +185,12 @@
       <updated>1525246178632</updated>
       <workItem from="1525246180055" duration="2088000" />
       <workItem from="1525321008775" duration="2757000" />
-      <workItem from="1525343622362" duration="27538000" />
+      <workItem from="1525343622362" duration="27672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32383000" />
+    <option name="totallyTimeSpent" value="32517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
@@ -412,10 +413,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_cars-block.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cars.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="178" column="34" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="34" />
+        <state relative-caret-position="166">
+          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
           <folding>
             <element signature="n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -423,13 +431,6 @@
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#34642#34649#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_cars-block.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="395" selection-start-line="395" selection-end-line="395" selection-end-column="142" />
         </state>
       </provider>
     </entry>
