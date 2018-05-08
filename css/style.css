@@ -450,6 +450,10 @@ body {
     background-image: url("../img/mazda.jpg"); }
   .cars-block .img-2 {
     background-image: url("../img/mondeo.jpg"); }
+  .cars-block .img-3 {
+    background-image: url("../img/audi_a4.jpg"); }
+  .cars-block .img-4 {
+    background-image: url("../img/kia-soul.jpg"); }
 
 .description {
   width: 100%; }
