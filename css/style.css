@@ -687,6 +687,25 @@ hr[role="tournament5"] {
     width: 7rem;
     height: 7rem;
     transition: all .5s; }
+  .cars__images-img[tabindex="0"] {
+    cursor: zoom-in; }
+  .cars__images-img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 120%;
+    max-height: 120%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, 0.4); }
+  .cars__images-img[tabindex="0"]:focus,
+  .cars__images-img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out; }
 
 .contacts {
   max-width: 65%;

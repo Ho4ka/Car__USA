@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d215b10-0ba5-4236-86cb-1d46f5da5490" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars.html" beforeDir="false" afterPath="$PROJECT_DIR$/cars.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/components/_cars-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_cars-block.scss" afterDir="false" />
     </list>
@@ -38,8 +36,8 @@
       <file leaf-file-name="_cars-block.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/components/_cars-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+            <state relative-caret-position="258">
+              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
             </state>
           </provider>
         </entry>
@@ -187,12 +185,12 @@
       <updated>1525246178632</updated>
       <workItem from="1525246180055" duration="2088000" />
       <workItem from="1525321008775" duration="2757000" />
-      <workItem from="1525343622362" duration="27307000" />
+      <workItem from="1525343622362" duration="27471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32152000" />
+    <option name="totallyTimeSpent" value="32316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
@@ -431,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_cars-block.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+        <state relative-caret-position="258">
+          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
         </state>
       </provider>
     </entry>
