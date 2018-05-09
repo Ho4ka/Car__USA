@@ -457,6 +457,10 @@ body {
     background-image: url("../img/audi_a4.jpg"); }
   .cars-block .img-4 {
     background-image: url("../img/kia-soul.jpg"); }
+  .cars-block .img-5 {
+    background-image: url("../img/leaf-white.jpg"); }
+  .cars-block .img-6 {
+    background-image: url("../img/leaf-asphalt.jpg"); }
 
 .description {
   width: 100%; }
@@ -479,7 +483,8 @@ body {
     margin: 1rem; }
     .description__detail-1 {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin-right: 1.5rem; }
       .description__detail-1 span {
         margin-left: 1rem;
         font-size: 1.4rem;
@@ -488,8 +493,10 @@ body {
     .description__detail-button {
       display: block;
       width: 12rem;
+      border: none;
       margin: 0 auto;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
       height: 3rem;
       font-size: 1.3rem;
       letter-spacing: 1px;
@@ -528,7 +535,10 @@ hr[role="tournament5"] {
   font-size: 1.4rem;
   letter-spacing: 1px;
   text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
   display: none;
+  background: white;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out; }
   .description__cars ul {
