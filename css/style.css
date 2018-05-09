@@ -521,7 +521,18 @@ hr[role="tournament5"] {
   .cars__images-img {
     width: 7rem;
     height: 7rem;
-    transition: all .5s; }
+    transition: all .5s;
+    cursor: pointer; }
+
+.description__cars {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  display: none;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out; }
+  .description__cars ul {
+    list-style: none; }
 
 #myImg {
   border-radius: 5px;

@@ -184,7 +184,23 @@ hr[role="tournament5"] {
     width: 7rem;
     height: 7rem;
     transition: all .5s;
+    cursor: pointer;
 
+  }
+
+}
+
+
+.description__cars {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  display: none;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out; ;
+
+  ul {
+    list-style: none;
   }
 
 }
