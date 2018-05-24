@@ -1,0 +1,3 @@
+User-agent: *
+Host: www.car4you.lviv.ua
+Sitemap: http://car4you.lviv.ua/sitemap.xml
