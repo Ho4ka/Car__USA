@@ -126,7 +126,7 @@ section {
   color: #fff; }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.4;
   background-color: #fbf9f9; }
@@ -311,12 +311,7 @@ body {
     .card__picture--3 {
       background-image: url(../img/audi_a4.jpg); }
     .card__picture--4 {
-      background-image: url(../img/kia-soul.jpg);
-      background-position: center; }
-    .card__picture--5 {
-      background-image: url(../img/nissan-leaf-asphalt.jpg); }
-    .card__picture--6 {
-      background-image: url(../img/nissan-leaf-white.jpg);
+      background-image: url(../img/lexus.jpg);
       background-position: center; }
   .card__heading {
     font-size: 2.8rem;
@@ -477,6 +472,10 @@ body {
     background-image: url("../img/forester.jpg"); }
   .cars-block .img-14 {
     background-image: url("../img/4matic.jpg"); }
+  .cars-block .img-15 {
+    background-image: url("../img/toyota-rav.jpg"); }
+  .cars-block .img-16 {
+    background-image: url("../img/chevrolet-cruze.jpg"); }
 
 .description {
   width: 100%; }
@@ -545,7 +544,8 @@ hr[role="tournament5"] {
     width: 7rem;
     height: 7rem;
     transition: all .5s;
-    cursor: pointer; }
+    cursor: pointer;
+    object-fit: cover; }
 
 .description__cars {
   font-size: 1.4rem;
@@ -1073,6 +1073,9 @@ select {
     font-weight: 400;
     color: white;
     padding: 0 4rem; }
+    @media only screen and (max-width: 68.75em) {
+      .footer__logo {
+        margin-top: 10rem; } }
     @media only screen and (max-width: 37.5em) {
       .footer__logo {
         font-size: 2.2rem; } }
@@ -1081,7 +1084,6 @@ select {
     flex-direction: column; }
     @media (max-width: 56.25em) {
       .footer__navigation, .footer__contacts {
-        width: 100%;
         text-align: center; } }
   .footer__contactsAndSocial {
     display: flex;
@@ -1096,6 +1098,9 @@ select {
     flex-direction: column;
     align-items: center;
     padding: 2rem 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__social, .footer__contacts {
+        padding: 1rem 2rem; } }
     .footer__social-phone, .footer__contacts-phone {
       text-decoration: none;
       color: #fff; }
@@ -1255,8 +1260,8 @@ select {
         display: flex; } }
   .header__p-economy-1 {
     color: white;
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 2.1rem;
+    font-weight: 300;
     position: absolute;
     line-height: 1.2;
     z-index: 10;
@@ -1278,8 +1283,8 @@ select {
         width: 85%; } }
   .header__p-economy-2 {
     color: var(--color-primary-2);
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 2.1rem;
+    font-weight: 300;
     line-height: 1.2;
     z-index: 10;
     text-align: center;
@@ -1480,7 +1485,7 @@ select {
     display: inline-block;
     width: 5rem;
     text-align: center;
-    line-height: 3rem;
+    line-height: 5rem;
     font-size: 5rem; }
 
 .services-header {

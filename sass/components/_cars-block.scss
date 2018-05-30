@@ -109,6 +109,12 @@
   .img-14 {
     background-image: url("../img/4matic.jpg");
   }
+  .img-15 {
+    background-image: url("../img/toyota-rav.jpg");
+  }
+  .img-16 {
+    background-image: url("../img/chevrolet-cruze.jpg");
+  }
 
 
 }
@@ -217,6 +223,7 @@ hr[role="tournament5"] {
     height: 7rem;
     transition: all .5s;
     cursor: pointer;
+    object-fit: cover;
 
   }
 
